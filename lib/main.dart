@@ -32,14 +32,14 @@ Future<void> main() async {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
+  final String title = 'Notes App';
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      routerConfig: _router,
-      
+      title: title,
+      routerConfig: _router,      
       theme: ThemeData(
         // This is the theme of your application.
         //
